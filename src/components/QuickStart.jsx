@@ -50,7 +50,7 @@ export default function QuickStart({ isServerInfo }) {
           </Timeline.Item>
 
           <Timeline.Item dot="🧰">
-            <Text style={styles.text}>Fiat</Text>
+            <Text delete={isServerInfo} style={styles.text}>Fiat</Text>
           </Timeline.Item>
 
           <Timeline.Item dot="💾">
@@ -66,7 +66,7 @@ export default function QuickStart({ isServerInfo }) {
           </Timeline.Item>
 
           <Timeline.Item dot="💿">
-            <Text style={styles.text}>It is an entry</Text>
+            <Text delete={isInchDex} style={styles.text}>It is an entry</Text>
           </Timeline.Item>
 
           <Timeline.Item dot="🚀">
@@ -105,8 +105,7 @@ export default function QuickStart({ isServerInfo }) {
           style={{ marginTop: "10px", ...styles.card }}
           title={
             <>
-              📡{" "}
-              <Text strong> Connecting your Local Chain</Text>
+              📡<Text strong>Connecting your Local Chain</Text>
             </>
           }
         >
