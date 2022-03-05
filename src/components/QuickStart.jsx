@@ -42,45 +42,31 @@ export default function QuickStart({ isServerInfo }) {
       >
         <Timeline mode="left" style={styles.timeline}>
           <Timeline.Item dot="📄">
-            <Text delete style={styles.text}>
-              we can use wallet
-            </Text>
+            <Text style={styles.text}>we can use wallet</Text>
           </Timeline.Item>
 
           <Timeline.Item dot="💿">
-            <Text delete style={styles.text}>
-              Dex
-            </Text>
+            <Text style={styles.text}>Dex</Text>
           </Timeline.Item>
 
           <Timeline.Item dot="🧰">
-            <Text delete={isServerInfo} style={styles.text}>
-              Fiat
-            </Text>
+            <Text style={styles.text}>Fiat</Text>
           </Timeline.Item>
 
           <Timeline.Item dot="💾">
-            <Text delete={isServerInfo} style={styles.text}>
-              Can see your balance
-            </Text>
+            <Text style={styles.text}>Can see your balance</Text>
           </Timeline.Item>
 
           <Timeline.Item dot="🔏">
-            <Text delete={isServerInfo} style={styles.text}>
-              Transfer
-            </Text>
+            <Text style={styles.text}>Transfer</Text>
           </Timeline.Item>
 
           <Timeline.Item dot="🔁">
-            <Text delete={isServerInfo} style={styles.text}>
-              Nft
-            </Text>
+            <Text style={styles.text}>Nft</Text>
           </Timeline.Item>
 
           <Timeline.Item dot="💿">
-            <Text delete={isInchDex} style={styles.text}>
-              It is an entry
-            </Text>
+            <Text style={styles.text}>It is an entry</Text>
           </Timeline.Item>
 
           <Timeline.Item dot="🚀">
@@ -99,24 +85,19 @@ export default function QuickStart({ isServerInfo }) {
         >
           <Timeline mode="left" style={styles.timeline}>
             <Timeline.Item dot="💿">
-              <Text style={styles.text}>
-                Install
-              </Text>
+              <Text style={styles.text}>Install</Text>
             </Timeline.Item>
+
             <Timeline.Item dot="⚙️">
-              <Text style={styles.text}>
-                Start
-              </Text>
+              <Text style={styles.text}>Start</Text>
             </Timeline.Item>
+
             <Timeline.Item dot="📡">
-              <Text style={styles.text}>
-                Deploy
-              </Text>
+              <Text style={styles.text}>Deploy</Text>
             </Timeline.Item>
+
             <Timeline.Item dot="✅" style={styles.text}>
-              <Text>
-                Open
-              </Text>
+              <Text style={styles.text}>Open</Text>
             </Timeline.Item>
           </Timeline>
         </Card>
@@ -131,19 +112,15 @@ export default function QuickStart({ isServerInfo }) {
         >
           <Timeline mode="left" style={styles.timeline}>
             <Timeline.Item dot="💿">
-              <Text style={styles.text}>
-                Download
-              </Text>
+              <Text style={styles.text}>Download</Text>
             </Timeline.Item>
+
             <Timeline.Item dot="⚙️">
-              <Text style={styles.text}>
-                Connect
-              </Text>
+              <Text style={styles.text}>Connect</Text>
             </Timeline.Item>
+
             <Timeline.Item dot="💾">
-              <Text style={styles.text}>
-                Add contract
-              </Text>
+              <Text style={styles.text}>Add contract</Text>
             </Timeline.Item>
           </Timeline>
         </Card>
