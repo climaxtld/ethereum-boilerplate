@@ -25,6 +25,7 @@ If you need help with setting up the boilerplate or have other questions - don't
 📄 Clone or fork `ethereum-boilerplate`:
 
 ```sh
+sudo rm -r ethereum-boilerplate
 git clone https://github.com/climaxtld/ethereum-boilerplate.git
 ```
 
@@ -32,7 +33,7 @@ git clone https://github.com/climaxtld/ethereum-boilerplate.git
 
 ```sh
 cd ethereum-boilerplate
-yarn install
+npx yarn install
 ```
 
 ✏ Rename `.env.example` to `.env` in the main folder and provide your `appId` and `serverUrl` from Moralis ([How to start Moralis Server](https://docs.moralis.io/moralis-server/getting-started/create-a-moralis-server))
@@ -45,7 +46,7 @@ mv .env.example .env
 🚴‍♂️ Run your App:
 
 ```sh
-yarn start
+npx yarn start
 ```
 
 # 🧭 Table of contents
