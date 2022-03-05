@@ -36,15 +36,55 @@ export default function QuickStart({ isServerInfo }) {
         style={styles.card}
         title={
           <>
-            📝 <Text strong>instruction</Text>
+            📝 <Text strong>Develop by Donald</Text>
           </>
         }
       >
         <Timeline mode="left" style={styles.timeline}>
           <Timeline.Item dot="📄">
             <Text delete style={styles.text}>
-              wallet can transfer erc20 token~
+              we can use wallet
             </Text>
+          </Timeline.Item>
+
+          <Timeline.Item dot="💿">
+            <Text delete style={styles.text}>
+              Dex
+            </Text>
+          </Timeline.Item>
+
+          <Timeline.Item dot="🧰">
+            <Text delete={isServerInfo} style={styles.text}>
+              Fiat
+            </Text>
+          </Timeline.Item>
+
+          <Timeline.Item dot="💾">
+            <Text delete={isServerInfo} style={styles.text}>
+              Can see your balance
+            </Text>
+          </Timeline.Item>
+
+          <Timeline.Item dot="🔏">
+            <Text delete={isServerInfo} style={styles.text}>
+              Transfer
+            </Text>
+          </Timeline.Item>
+
+          <Timeline.Item dot="🔁">
+            <Text delete={isServerInfo} style={styles.text}>
+              Nft
+            </Text>
+          </Timeline.Item>
+
+          <Timeline.Item dot="💿">
+            <Text delete={isInchDex} style={styles.text}>
+              It is an entry
+            </Text>
+          </Timeline.Item>
+
+          <Timeline.Item dot="🚀">
+            <Text style={styles.text}>BUIDL!!!</Text>
           </Timeline.Item>
         </Timeline>
       </Card>
@@ -53,14 +93,29 @@ export default function QuickStart({ isServerInfo }) {
           style={styles.card}
           title={
             <>
-              💣 <Text strong>Starting Local Chain </Text>
+              💣 <Text strong>Starting Local Chain</Text>
             </>
           }
         >
           <Timeline mode="left" style={styles.timeline}>
+            <Timeline.Item dot="💿">
+              <Text style={styles.text}>
+                Install
+              </Text>
+            </Timeline.Item>
             <Timeline.Item dot="⚙️">
               <Text style={styles.text}>
-                also can Start you local devchain to use it
+                Start
+              </Text>
+            </Timeline.Item>
+            <Timeline.Item dot="📡">
+              <Text style={styles.text}>
+                Deploy
+              </Text>
+            </Timeline.Item>
+            <Timeline.Item dot="✅" style={styles.text}>
+              <Text>
+                Open
               </Text>
             </Timeline.Item>
           </Timeline>
@@ -70,14 +125,24 @@ export default function QuickStart({ isServerInfo }) {
           title={
             <>
               📡{" "}
-              <Text strong> Develop by Donald </Text>
+              <Text strong> Connecting your Local Chain</Text>
             </>
           }
         >
           <Timeline mode="left" style={styles.timeline}>
+            <Timeline.Item dot="💿">
+              <Text style={styles.text}>
+                Download
+              </Text>
+            </Timeline.Item>
             <Timeline.Item dot="⚙️">
               <Text style={styles.text}>
-                First DAPP
+                Connect
+              </Text>
+            </Timeline.Item>
+            <Timeline.Item dot="💾">
+              <Text style={styles.text}>
+                Add contract
               </Text>
             </Timeline.Item>
           </Timeline>
