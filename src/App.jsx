@@ -18,7 +18,6 @@ import { Layout, Tabs } from "antd";
 import "antd/dist/antd.css";
 import NativeBalance from "components/NativeBalance";
 import "./style.css";
-import QuickStart from "components/QuickStart";
 import Contract from "components/Contract/Contract";
 import Text from "antd/lib/typography/Text";
 //import Ramper from "components/Ramper";
@@ -87,8 +86,8 @@ const App = ({ isServerInfo }) => {
 
         <div style={styles.content}>
           <Switch>
-            <Route exact path="/quickstart">
-              <QuickStart isServerInfo={isServerInfo} />
+            <Route exact path="/DEX">
+              <DEX isServerInfo={isServerInfo} />
             </Route>
             <Route path="/wallet">
               <Wallet />
@@ -119,10 +118,10 @@ const App = ({ isServerInfo }) => {
               <Contract />
             </Route>
             <Route path="/">
-              <Redirect to="/quickstart" />
+              <Redirect to="/DEX" />
             </Route>
             <Route path="/ethereum-boilerplate">
-              <Redirect to="/quickstart" />
+              <Redirect to="/DEX" />
             </Route>
             <Route path="/nonauthenticated">
               <>Please login using the "Authenticate" button</>
